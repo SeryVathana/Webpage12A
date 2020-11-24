@@ -1,0 +1,147 @@
+body{
+    background: linear-gradient(-45deg, #ba4a4a, #743c52, #382a4f, #041736);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+    font-family: 'Comfortaa', cursive;
+}
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+        rotate: 45deg;
+    }
+}
+.page_name {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 50px;
+    color: #ececec;
+}
+.page_body {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin: 10px 10px;
+}
+
+img {
+    width: 250px;
+    margin: -20px;
+}
+.logo {
+    text-align: center;
+}
+.welcome{
+    font-size: 20px;
+    color: #ececec;
+}
+.v-s-u {
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+    border-style: none;
+    border-radius: 20px;
+    color: #ececec;
+    font-size: 16px;
+    background-color: #ea5d39;
+    font-family: 'Comfortaa', cursive;
+    outline: none;
+}
+
+.signup-form{
+    background-color: #ea5d39;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    align-self: center;
+    color: #ececec;
+    border-radius: 5px;
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+}
+
+.signup-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+input {
+    width: 200px;
+    height: 20px;
+    border-style: none;
+    padding: 5px;
+    padding-left: 10px;
+    outline: none;
+    background-color: #ececec;
+    color: 	#041736;
+    border-radius: 5px;
+    font-family: 'Comfortaa', cursive;
+    margin-top: -2px;
+}
+.signup-button{
+    border-style: none;
+    width: 210px;
+    height: 30px;
+    background-color: 	#382a4f;
+    color: #ececec;
+    border-radius: 5px;
+    font-family: 'Comfortaa', cursive;
+    outline: none;
+}
+.login-button {
+    border-style: none;
+    width: 210px;
+    height: 30px;
+    background-color:	#743c52;
+    color: #ececec;
+    border-radius: 5px;
+    font-family: 'Comfortaa', cursive;
+    outline: none;
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #382a4f;
+}
+@media only screen and (max-width: 900px){
+    .page_name {
+        margin-top: 20px;
+    }
+    .image1{
+        display: none;
+    }
+    .page_body {
+        flex-direction: column;
+        margin: 0px, 0px;
+    }
+    .signup-form {
+        width: 200px;
+    }
+    .signup-items{
+        margin: -30px;
+    }
+    button{
+        margin-top: -5px;
+    }
+    input{
+        margin: -5px;
+    }
+    .welcome {
+        font-size: 16px;
+        margin: 10px;
+    }
+}
